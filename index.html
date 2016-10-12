@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pyramid Slide Assignment</title>
+    <style>
+        #pyramid {  line-height: 0;
+                    font-size: 30px;
+
+        }
+
+        body {      font-family: "Courier New", monospace;
+                    text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <h1>Pyramid Slide</h1>
+      <br>
+    <p>Use Slider to increase or decrease Pyramid height</p>
+    <p><strong>It's fun!  Really!</strong></p>
+    <input type="range" id="slider"  oninput="determineHeightAndThenDrawPyramid()" value="" min="0" max="20">
+      <br>
+      <div type="number" id="counter"></div>
+      <br>
+    <pre id="pyramid">
+        <p></p>
+    </pre>
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>
