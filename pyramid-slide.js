@@ -15,9 +15,15 @@ function determineHeightAndThenDrawPyramid() {
     // draw the pyramid with the given height
     drawPyramid(height);
 
+    document.getElementById("counter").innerHTML = '';
+    // create a text element with the string of characters
+    counterElem = document.createTextNode(height);
+    // create a <p> element with the text inside
+    ctElem = document.createElement("p");
+    ctElem.appendChild(counterElem);
+    // insert the paragraph as a child of the container <div>
+    document.getElementById('counter').appendChild(ctElem);
 }
-
-  
 
     // TODO 1
     // hook up the button's click event to our determineHeightAndThenDrawPyramid function
